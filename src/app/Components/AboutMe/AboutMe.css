@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    /*height: 100vh;*/
+}
+
+.left{
+    flex: 0.4;
+    /*border:1px solid black;*/
+    padding: 2%;
+}
+
+.mid{
+    flex: 0.2;
+    /*border:1px solid red;*/
+    padding-top: 5%;
+}
+
+.right{
+    flex: 0.4;
+    /*border:1px solid purple;*/
+    padding: 2%
+}
+
+.imgStyle {
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+.rightTextStyle {
+    font-size: 1.2rem;
+}
+
+
+
+@media (max-width: 480px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/aeonikRegular.otf') format('otf'),
+    url('/fonts/aeonikRegular.otf') format('otf'),
+    url('/fonts/aeonikRegular.otf') format('otf');
+    font-weight: normal; /* Change as needed */
+    font-style: normal;  /* Change as needed */
+}
+p {
+    font-family: 'MyCustomFont', sans-serif; /* Fallback to sans-serif */
+}
+
