@@ -5,14 +5,14 @@
     height: 100vh; /* Full viewport height */
 }
 
-.header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px; /* Adjust as necessary */
-}
+/*.header-container {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    padding: 20px; !* Adjust as necessary *!*/
+/*}*/
 
 .landing-page {
     flex: 1; /* Take the remaining space */

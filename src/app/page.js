@@ -1,7 +1,6 @@
-import Header from "@/app/Components/Header/Header";
-import LandingPage from "@/app/Components/LandingPage/LandingPage";
 import AboutMe from "@/app/Components/AboutMe/AboutMe";
 import MainPage from "@/app/Components/MainPage/MainPage";
+import Experience from "@/app/Components/Experience/Experience";
 
 export default function Home() {
     return (
@@ -9,6 +8,7 @@ export default function Home() {
             className="sm:p-20 font-[family-name:var(--font-aeonik-regular)]">
             <MainPage/>
             <AboutMe/>
+            <Experience />
         </div>
     );
 }
