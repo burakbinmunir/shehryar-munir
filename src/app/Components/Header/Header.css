@@ -4,13 +4,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 10px; /* Add some padding for aesthetics */
+    box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 .header-left {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header-right {
@@ -22,18 +23,17 @@
 /* Mobile view styling */
 @media (max-width: 480px) {
     .header-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 5px; /* Adjust padding for mobile */
     }
 
     .header-left {
+        margin-top: 10vh;
         flex-direction: row; /* Keep items in a row for horizontal scrolling */
         overflow-x: auto; /* Enable horizontal scroll */
         white-space: nowrap; /* Prevent wrapping */
-        width: 100%; /* Make it full-width to fill the viewport */
-        padding: 0 5px; /* Optional: add padding for aesthetics */
-        scrollbar-width: thin; /* Optional: style the scrollbar for supported browsers */
+        width: 100%; /* Full-width to fill the viewport */
     }
 
     .header-left-content {
@@ -41,7 +41,7 @@
     }
 
     .header-right {
-        margin-top: 1vh;
+        margin-top: 10px; /* Adjust spacing */
         display: flex;
         flex-direction: row;
         align-items: center;
