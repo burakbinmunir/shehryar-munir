@@ -1,14 +1,34 @@
+"use client";
 import React from 'react';
 import Image from "next/image";
 import './Header.css'
 
 export default function Header() {
+    const smoothScroll = (targetId, duration) => {
+        const targetElement = document.getElementById(targetId);
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        const animation = currentTime => {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1); // Ensure progress is not greater than 1
+            window.scrollTo(0, startPosition + distance * progress);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        };
+
+        requestAnimationFrame(animation);
+    };
 
     return (
         <header className="header-container">
-            <div className={"header-left"} >
-                <p className={"mx-4 header-left-content"}>About Me</p>
-                <p className={"mx-4 header-left-content"}>Portfolio</p>
+            <div className={"header-left"}>
+                <p onClick={() => smoothScroll('about-me', 300)} className={"mx-4 header-left-content"}
+                   style={{cursor: 'pointer'}}>About Me</p>
+                <p onClick={() => smoothScroll('experience', 300)} className={"mx-4 header-left-content"}
+                   style={{cursor: 'pointer'}}>Experience</p>
                 <p className={"mx-4 header-left-content"}>Services</p>
                 <p className={"mx-4 header-left-content"}>Blog</p>
             </div>

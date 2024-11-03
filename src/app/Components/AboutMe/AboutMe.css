@@ -1,0 +1,47 @@
+.about-me-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.left{
+    flex: 0.3;
+    padding: 2%;
+}
+
+.mid{
+    flex: 0.4;
+    padding-top: 5%;
+}
+
+.right{
+    flex: 0.3;
+    padding: 2%
+}
+
+.imgStyle {
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+.rightTextStyle {
+    font-size: 1.2rem;
+}
+
+
+
+@media (max-width: 480px) {
+    .about-me-container{
+        flex-direction: column;
+        margin-top: 20vh;
+        height: 300vh;
+    }
+    .right {
+        flex: 0.1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
