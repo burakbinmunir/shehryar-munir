@@ -54,7 +54,7 @@ export default function Experience() {
                 </div>
                 <div>
                     <h1 style={{color: AppColors?.secondary, fontSize: MetricsSizes?.large - 3}}>
-                        Over the past 4 years, I&#39;ve had the opportunity to work on numerous challenging projects,
+                        Over the past 4 years, I&#39;ve  had the opportunity to work on numerous challenging projects,
                         collaborating with diverse teams and clients to bring creative visions to life.
                     </h1>
                 </div>
