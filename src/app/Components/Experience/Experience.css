@@ -1,0 +1,78 @@
+.experience-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-top: 10vh;
+}
+
+.header-view {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    align-items: center;
+}
+
+.experience-list {
+    margin-top: 28px;
+    display: grid;
+    gap: 20px;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5vh 0;
+}
+
+.experience-item-left img {
+    max-width: 100%;
+    height: auto;
+}
+.experience-item-left {
+    margin: 0 5vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.experience-item-left,
+.experience-item-mid,
+.experience-item-right {
+    margin: 0 5vh;
+}
+
+.experience-item-mid {
+    text-align: center;
+}
+
+.experience-item-right {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .header-view {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        padding-top: 5vh;
+    }
+
+    .experience-item {
+        padding: 3vh 0;
+    }
+
+    .experience-item-left,
+    .experience-item-mid,
+    .experience-item-right {
+        margin: 0;
+        padding: 0 10px;
+    }
+}

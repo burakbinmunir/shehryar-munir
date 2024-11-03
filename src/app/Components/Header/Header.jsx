@@ -27,7 +27,8 @@ export default function Header() {
             <div className={"header-left"}>
                 <p onClick={() => smoothScroll('about-me', 300)} className={"mx-4 header-left-content"}
                    style={{cursor: 'pointer'}}>About Me</p>
-                <p className={"mx-4 header-left-content"}>Portfolio</p>
+                <p onClick={() => smoothScroll('experience', 300)} className={"mx-4 header-left-content"}
+                   style={{cursor: 'pointer'}}>Experience</p>
                 <p className={"mx-4 header-left-content"}>Services</p>
                 <p className={"mx-4 header-left-content"}>Blog</p>
             </div>

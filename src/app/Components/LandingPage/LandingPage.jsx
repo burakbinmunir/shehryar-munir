@@ -1,6 +1,5 @@
 import React from 'react';
 import './LandingPage.css'
-import Header from "@/app/Components/Header/Header";
 import Image from "next/image";
 
 export default function LandingPage() {
